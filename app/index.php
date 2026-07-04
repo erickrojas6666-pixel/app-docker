@@ -126,12 +126,6 @@
             $insertados++;
         }
 
-        // Mensaje de éxito
-        echo '<div class="mensaje">';
-        echo '✅ <strong>' . $insertados . ' libros insertados correctamente</strong><br>';
-        echo '<small>La tabla fue vaciada y cargada con los nuevos datos</small>';
-        echo '</div>';
-
         // Mostrar todos los libros
         $result = $conn->query("SELECT * FROM libros ORDER BY id");
         $libros_mostrar = $result->fetchAll(PDO::FETCH_ASSOC);
@@ -144,7 +138,7 @@
                 echo '<td>' . $libro['id'] . '</td>';
                 echo '<td>' . htmlspecialchars($libro['titulo']) . '</td>';
                 echo '<td>' . htmlspecialchars($libro['autor']) . '</td>';
-                echo '<td>' . $libro['año'] . '</td>';
+                echo '<td>' . $libro['anio_publicacion'] . '</td>';
                 echo '</tr>';
             }
             echo '</table>';
