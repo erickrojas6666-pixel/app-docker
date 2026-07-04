@@ -68,7 +68,7 @@
     </style>
 </head>
 <body>
-    <h1>📚 Mi Biblioteca</h1>
+    <h1>Libros Disponibles</h1>
 
     <?php
     // Tu conexión a PostgreSQL en Render
@@ -108,22 +108,6 @@
             ['El principito', 'Antoine de Saint-Exupéry', 1943],
             ['1984', 'George Orwell', 1949],
             ['Don Quijote de la Mancha', 'Miguel de Cervantes', 1605],
-            ['La sombra del viento', 'Carlos Ruiz Zafón', 2001],
-            ['El alquimista', 'Paulo Coelho', 1988],
-            ['Crónica de una muerte anunciada', 'Gabriel García Márquez', 1981],
-            ['Rayuela', 'Julio Cortázar', 1963],
-            ['Ficciones', 'Jorge Luis Borges', 1944],
-            ['El amor en los tiempos del cólera', 'Gabriel García Márquez', 1985],
-            ['La casa de los espíritus', 'Isabel Allende', 1982],
-            ['Pedro Páramo', 'Juan Rulfo', 1955],
-            ['El túnel', 'Ernesto Sabato', 1948],
-            ['La tregua', 'Mario Benedetti', 1960],
-            ['El llano en llamas', 'Juan Rulfo', 1953],
-            ['Aura', 'Carlos Fuentes', 1962],
-            ['La muerte de Artemio Cruz', 'Carlos Fuentes', 1962],
-            ['Como agua para chocolate', 'Laura Esquivel', 1989],
-            ['La fiesta del chivo', 'Mario Vargas Llosa', 2000],
-            ['Los pasos perdidos', 'Alejo Carpentier', 1953]
         ];
 
         // 3. Insertar TODOS los libros
