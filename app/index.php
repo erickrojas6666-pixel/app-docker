@@ -24,7 +24,10 @@
             // 2. Insertar datos iniciales si la tabla está vacía (Opcional)
             $count = $conn->query("SELECT count(*) FROM libros")->fetchColumn();
             if ($count == 0) {
+                $conn->exec("TRUNCATE TABLE libros");
                 $conn->exec("INSERT INTO libros (titulo, autor, anio_publicacion) VALUES
+                ('Cien anos de soledad', 'Gabriel García Márquez', 1967),
+                ('El principito', 'Antoine de Saint-Exupéry', 1943),
                 ('1984', 'George Orwell', 1949),
                 ('Don Quijote de la Mancha', 'Miguel de Cervantes', 1605)");
             }
