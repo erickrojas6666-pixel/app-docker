@@ -91,7 +91,7 @@
             id SERIAL PRIMARY KEY,
             titulo VARCHAR(200) NOT NULL,
             autor VARCHAR(150) NOT NULL,
-            año INT
+            anio_publicacion INT
         )");
 
         // ============================================
@@ -132,12 +132,12 @@
             // Usamos comillas simples escapadas para evitar problemas
             $titulo = addslashes($libro[0]);
             $autor = addslashes($libro[1]);
-            $año = (int)$libro[2];
+            $anio_publicacion = (int)$libro[2];
             
-            $conn->exec("INSERT INTO libros (titulo, autor, año) VALUES (
+            $conn->exec("INSERT INTO libros (titulo, autor, anio_publicacion) VALUES (
                 '$titulo', 
                 '$autor', 
-                $año
+                $anio_publicacion
             )");
             $insertados++;
         }
